@@ -3,7 +3,7 @@ title:       archiblog
 email:       kstarachowicz@gmail.com
 author:      Katarzyna Starachowicz
 description: "Just to write down what I'm learning"
-baseurl:     "/archiblog"
+baseurl:     ""
 url:         "https://katarzyna-starachowicz.github.io"
 date_format: "%b %-d, %Y"
 header_pages:
