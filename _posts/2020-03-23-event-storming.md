@@ -18,6 +18,7 @@ How does it work? We invite domain experts ("business people") and developers[^1
 
 Mostly we start with __Big Picture Event Storming__ to see the project domain from above. Next we run into __Design Level Event Storming__ when developers translate domain knowledge into code structure.
 
+
 ---
 
 [^1]: I'm focusing here on creating / refactoring software applications. But event storming can be used in all other context.
