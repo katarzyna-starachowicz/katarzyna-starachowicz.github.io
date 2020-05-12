@@ -1,4 +1,4 @@
-context---
+---
 layout: post
 title: How much bounded should be the context?
 date: 2020-05-11 23:03
@@ -63,6 +63,7 @@ After consideration I see (5.) `payment` as an additional autonomous bounded con
 * It is responsible for money transferring.
 * It has its own data: only payment context must know user bank account or transfer title.
 * The app will need to be integrated with the payment gateway. Application access to the payment is crucial for the business and thus we need a dedicated focus on that topic.
+
 
 ---
 
