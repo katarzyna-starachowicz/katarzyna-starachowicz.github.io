@@ -5,7 +5,9 @@ date: 2020-05-11 23:03
 summary: What is bounded context and how to validate it
 categories: ddd, event storming, bounded context
 ---
+
 > DDD is primarily about modeling a Ubiquitous Language in an explicitly Bounded Conetxt[^1].
+
 
 In our last pig picture event storming we already found some elements of budgeting ubiquitous language, like `budgeting`, `payment recording`, `budget goal setting`, `budget category`, `budget categories group` etc. We found also, that there are words used in different contexts which means something different – `payment` for example.
 
@@ -15,6 +17,7 @@ By the way – from the outside perspective it can be "the same" money! So, user
 
 >The Bounded Context is a central pattern in Domain-Driven Design. It is the focus of DDD’s strategic design section which is all about dealing with large models and teams. DDD deals with large models by dividing them into different Bounded Contexts and being explicit about their interrelationships.
 As you try to model a larger domain, it gets progressively harder to build a single unified model. Different groups of people will use subtly different vocabularies in different parts of a large organization. The precision of modeling suffers, often leading to a lot of confusion. Typically this confusion focuses on the central concepts of the domain[^2].
+
 
 __Bounded context__ is a sub-system of our system. It has clear boundaries (`bounded` context) which are linguistic boundaries. Concepts are clear inside these boundaries (bounded `context`), every one context has its own ubiquitous language, has its own specific language for solving its problem, has its own domain model.
 
