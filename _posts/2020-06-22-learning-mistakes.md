@@ -19,7 +19,7 @@ I started with tutorials. It's totally normal and OK when you begin. Even later 
 
 # Well rounded junior developer oxymoron
 One of the reasons why I followed the next tutorials instead of building something by myself – I explained it to myself – was thinking: I still do not know how Linux works, how to optimize SQL queries, or... whatever! And, to be honest, it was true. But more brutal true is – as a junior developer you will still know nothing.
-![You know nothing, John Snow](assets/2020-06-22-learning-mistakes/you-know-nothing.gif)
+![You know nothing, John Snow](assets/2020-06-22-learning-mistakes/you-know-nothing-jon-snow.png)
 If your goal is to get the first job as a developer (to learn more, of course) – focus on small topics but be good at them. You don't have to know the stages of the Linux boot process, but you have to know how to allow your application's user to edit the blog post.
 
 # Top secret: the best programming language exists
