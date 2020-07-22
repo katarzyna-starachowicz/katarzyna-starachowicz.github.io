@@ -15,7 +15,7 @@ When we say that `user records payment` – it's no the same payment, when we sa
 
 By the way – from the outside perspective it can be "the same" money! So, user budgets 10$ for our app fee (budgeting context, because it changes budget state), pays the fee (accounting context, because it triggers some accounting processes), and records the payment (budgeting context again, as it changes budget state).
 
->The Bounded Context is a central pattern in Domain-Driven Design. It is the focus of DDD’s strategic design section which is all about dealing with large models and teams. DDD deals with large models by dividing them into different Bounded Contexts and being explicit about their interrelationships.
+> The Bounded Context is a central pattern in Domain-Driven Design. It is the focus of DDD’s strategic design section which is all about dealing with large models and teams. DDD deals with large models by dividing them into different Bounded Contexts and being explicit about their interrelationships.
 As you try to model a larger domain, it gets progressively harder to build a single unified model. Different groups of people will use subtly different vocabularies in different parts of a large organization. The precision of modeling suffers, often leading to a lot of confusion. Typically this confusion focuses on the central concepts of the domain[^2].
 
 
