@@ -9,9 +9,9 @@ categories: ddd, event storming, bounded context
 > DDD is primarily about modeling a Ubiquitous Language in an explicitly Bounded Conetxt[^1].
 
 
-In our last pig picture event storming we already found some elements of budgeting ubiquitous language, like `budgeting`, `payment recording`, `budget goal setting`, `budget category`, `budget categories group` etc. We found also, that there are words used in different contexts which means something different – `payment` for example.
+In our last big picture event storming we already found some elements of budgeting ubiquitous language, like `budgeting`, `payment recording`, `budget goal setting`, `budget category`, `budget categories group` etc. We found also, that there are words used in different contexts which means something different – `payment` for example.
 
-When we say that `user records payment` – it's no the same payment, when we say that `proof of payment is sent via e-mail`. The first one is in `budgeting` bounded context and means that the user spent some of the budgeted money: event `payment recorded` changes the user's budget. The second one stays in `accounting` bounded context and means that some money (let's hope, also budgeted by user) came to my company account and now my company must issue an invoice and send it to the user.
+When we say that `user records payment` – it's no the same payment, when we say that `proof of payment is sent via e-mail`. The first one is in `budgeting` bounded context and means that the user spent some of the budgeted money: event `payment recorded` changes the user's budget. The second one stays in `accounting` bounded context and means that some money (let's hope, also budgeted by user) came to My Budgeting company account and now the company must issue an invoice and send it to the user.
 
 By the way – from the outside perspective it can be "the same" money! So, user budgets 10$ for our app fee (budgeting context, because it changes budget state), pays the fee (accounting context, because it triggers some accounting processes), and records the payment (budgeting context again, as it changes budget state).
 
@@ -47,7 +47,7 @@ If we have information used together, we probably have one bounded context.
 
 #### 5. Ask questions:
 1. What is the responsibility of the context?
-It should be described in on or few simple sentences. I already did it above.
+It should be described in one or few simple sentences.
 
 2. How many integrations has the bounded context?
 Outside integration makes autonomy weaker than inside integration (integration to some module/service developed inside the company). And what is the reason for integration?
