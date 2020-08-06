@@ -9,7 +9,7 @@ categories: ddd, event storming, bounded context
 > DDD is primarily about modeling a Ubiquitous Language in an explicitly Bounded Conetxt[^1].
 
 
-In our last big picture event storming we already found some elements of budgeting ubiquitous language, like `budgeting`, `payment recording`, `budget goal setting`, `budget category`, `budget categories group` etc. We found also, that there are words used in different contexts which means something different – `payment` for example.
+In our last [big picture event storming](https://katarzyna-starachowicz.github.io/events-everywhere) we already found some elements of budgeting ubiquitous language, like `budgeting`, `payment recording`, `budget goal setting`, `budget category`, `budget categories group` etc. We found also, that there are words used in different contexts which means something different – `payment` for example.
 
 When we say that `user records payment` – it's no the same payment, when we say that `proof of payment is sent via e-mail`. The first one is in `budgeting` bounded context and means that the user spent some of the budgeted money: event `payment recorded` changes the user's budget. The second one stays in `accounting` bounded context and means that some money (let's hope, also budgeted by user) came to My Budgeting company account and now the company must issue an invoice and send it to the user.
 
