@@ -31,7 +31,7 @@ When the company is big we can often map organisation department to one bounded 
 Thus these 4 would be my bounded contexts.
 
 ### Context boundaries validation
-If we are not sure if our boundaries are defined correctly, it's good to validate context boundaries. There is a few hermeneutics we can use here.
+If we are not sure if our boundaries are defined correctly, it's good to validate context boundaries. There is a few hermeneutics we can use here[^3].
 
 #### 1. Context Autonomy
 Bounded context should be able to make decisions autonomously, shouldn't ask for permission from another context.
@@ -73,3 +73,5 @@ After consideration I see (5.) `payment` as an additional autonomous bounded con
 [^1]: Vaughn Vernon, Domain-Driven Design Distilled, Boston 2016, p. 11.
 
 [^2]: Martin Fowler, http://martinfowler.com/bliki/BoundedContext.html.
+
+[^3]: There are many sources about patterns and heuristics to model your domain. You could start with Nick Tune talk describing how to find bounded contexts in your domain: https://www.youtube.com/watch?v=ez9GWESKG4I, and check more possibilities here: https://www.dddheuristics.com, https://github.com/ddd-crew/ddd-starter-modelling-process.
