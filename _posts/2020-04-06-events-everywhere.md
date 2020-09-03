@@ -39,6 +39,8 @@ I already know, there will be something more complex with setting budget goals, 
 
 As you can see, we use the word `payment` in two different contexts and they mean – from domain point of view – something different... We will go back to that when we will define `bounded contexts`.
 
+### The review process
+After you set all events in proper order – try to revisit events from the end to the start, form the right to the left. It changes your everyday routine of thinking about the business events flow consequently helps to validate the logic of a flow.
 
 ---
 
@@ -46,4 +48,4 @@ As you can see, we use the word `payment` in two different contexts and they mea
 
 [^2]: I read mostly polish blogs, e.g. written by [Marcin Iwuć](https://marciniwuc.com/) or [Michał Szafrański](https://jakoszczedzacpieniadze.pl/). I learned English budgeting language mostly on the site of [YNAB](https://www.youneedabudget.com/).
 
-[^3]: Robert Pankowecki & Arkency Team. “Domain-Driven Rails”.
+[^3]: Robert Pankowecki & Arkency Team, “Domain-Driven Rails”, Leanpub 2016-2020.
