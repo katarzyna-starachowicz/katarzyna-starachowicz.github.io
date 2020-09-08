@@ -30,6 +30,7 @@ After a My Budgeting app user sign up – the free trial expiration is scheduled
 ### Why we need Design Level Event Storming?
 During the design level event storming session, we explore domain language further and business policies. We keep common knowledge visualisation. Last but not least, it's just the easiest and cheapest (sticky notes on the wall!) way of exploring different models, move commands, business rules, adding or removing policies.
 
+
 ---
 
 [^1]: Kevin Webber, [Modelling Reactive Systems with Event Storming and Domain-Driven Design](https://blog.redelastic.com/corporate-arts-crafts-modelling-reactive-systems-with-event-storming-73c6236f5dd7).
