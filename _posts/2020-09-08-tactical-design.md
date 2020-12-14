@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Tactical design – value object, entity, aggregate
-date: 2020-09-03 07:34
+date: 2020-09-08 09:13
 summary: Explore system structure further
 categories: value object, entity, aggregate
 ---
 
 Every step in our business analysis journey brings you closer to coding. It's time to look for value objects, entities and aggregates.
-Value object
+### Value object
 `Value object` is something (object) to describe (value) something. In DDD we want to use meaningful objects instead of primitives. On code level – it's often a class keeping few attributes. For example: `30 EUR`, `vat rate` (0 can here have 3 meanings and we have to distinguish between them), `id`, `ActiveSupport::TimeZone`.
 In My Budgeting project, we definitely need the `money` value object which describes amount and currency. Something like:
 {% highlight ruby lineanchors %}
@@ -26,11 +26,11 @@ currency.iso_code #=> "USD"
 currency.name     #=> "United States Dollar”
 {% endhighlight %}
 
-Entity
+### Entity
 It's mostly what you have in `ActiveRecord::Base`, a domain object with a unique identity. Usually it has mutable state (it changes in time). For example, in My Budgeting core domain, we have: `user`, `budget categories group`, `budget category`, `payment`.
 
-Aggregate
-An aggregate is a bunch (a tree) of few entities, but can be represented by only one entity as well. The interface of aggregate elements is `aggregate root`. For example, we could have the whole budget aggregate. If we want to change only value of one category, we would need to do it through budget aggregate, where a category is one of the aggregate "leafs".
+### Aggregate
+An `aggregate` is a bunch (a tree) of few entities, but can be represented by only one entity as well. The interface of aggregate elements is `aggregate root`. For example, we could have the whole budget aggregate. If we want to change only value of one category, we would need to do it through budget aggregate, where a category is one of the aggregate "leafs".
 One transaction should change only one aggregate. We load the whole structure from a database, operate on that in memory (updates, removing/adding elements), and save the whole structure in the database. The role of aggregate is to protect certain business rules we always want to have true.
 Vaughn Vernon suggest four basic rules of aggregate design:
 >
